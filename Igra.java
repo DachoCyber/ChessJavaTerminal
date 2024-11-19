@@ -28,7 +28,7 @@ public class Igra {
                 } while (!legalanPotezi);
 
                 Figura crniKralj = sahovskaTabla[pozCrnogKralja];
-                jeCrniKraljMatiran = ((Kralj) crniKralj).jeMatiran(pozBelogKralja);
+                jeCrniKraljMatiran = ((Kralj) crniKralj).jeMatiran(pozCrnogKralja);
                 if(jeBeliKraljMatiran) {
                     System.out.println("Beli je pobedio!");
                     break;
@@ -41,7 +41,7 @@ public class Igra {
                 } while (!legalanPotezi);
 
                 Figura beliKralj = sahovskaTabla[pozBelogKralja];
-                jeBeliKraljMatiran = ((Kralj) beliKralj).jeMatiran(pozCrnogKralja);
+                jeBeliKraljMatiran = ((Kralj) beliKralj).jeMatiran(pozBelogKralja);
                 if(jeBeliKraljMatiran) {
                     System.out.println("Crni je pobedio!");
                     break;
