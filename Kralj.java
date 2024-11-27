@@ -83,7 +83,7 @@ public class Kralj extends Figura {
             return false;
         } else if (crniKraljPomaknut && boja.equals("crni")) {
             return false;
-        } else if (!this.jePodSahom(indexStart)) {
+        } else if (this.jePodSahom(indexStart)) {
             return false;
         } else {
             if (boja.equals("beli")) {
