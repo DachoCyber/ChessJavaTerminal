@@ -57,9 +57,7 @@ public class Kralj extends Figura {
 
         if (koordKraj == koordStart) {
             return false;
-        } else if (this.malaRokada(indexStart)) {
-            return true;
-        } else if (this.velikaRokada(indexStart)) {
+        } else if (malaRokada(indexStart) || velikaRokada(indexStart)) {
             return true;
         } else if (Math.abs(koordStart[0] - koordKraj[0]) <= 1 && Math.abs(koordStart[1] - koordKraj[1]) <= 1) {
             for(int i = 0; i < sahovskaTabla.length; ++i) {
