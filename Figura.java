@@ -24,8 +24,8 @@ public abstract class Figura {
     }
 
     public boolean unutarTablePotez(int indexKraj) {
-        int[] koord = hashIndex(indexKraj);
-        return koord[0] >= 0 && koord[1] >= 0 && koord[0] <= 7 && koord[1] <= 7;
+        
+        return indexKraj >= 0 && indexKraj <= 63;
     }
     public abstract ArrayList<Integer> napadnutaPolja(int trPozicija);
 }
